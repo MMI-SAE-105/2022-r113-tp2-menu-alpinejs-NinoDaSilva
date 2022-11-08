@@ -12,8 +12,8 @@
     <!-- header>h1{Test de menu} -->
     <header>
       <h1>Test de menu</h1>
-      <button aria-controls="mainNav">menu</button>
-      <nav id="mainNav" x-data x-show="false">
+      <button aria-controls="mainNav" aria-expanded="true" @click="menuIsOpen = ! menuIsOpen">menu</button>
+      <nav id="mainNav" x-show="menuIsOpen">
         <ul>
           <li><a href="#">item 1</a></li>
           <li><a href="#">item 2</a></li>
