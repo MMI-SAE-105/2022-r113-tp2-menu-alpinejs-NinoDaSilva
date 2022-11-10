@@ -32,7 +32,7 @@
     <!-- header>h1{Test de menu} -->
     <header>
       <button aria-controls="mainNav" aria-expanded="true"
-      @click="menuIsOpen = ! menuIsOpen":class="header_menuBtn">
+      @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
       menu</button>
       <h1>Test de menu</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
@@ -53,15 +53,15 @@
       consectetur nobis enim.
     </p>
     <!-- accordeon -->
-    <dl  x-data="{accoIsOpen: true}":class="{noscroll:accoIsOpen}" aria-controls="acco1" @click="accoIsOpen = ! accoIsOpen">
+    <dl  x-data="{accoIsOpen: false}":class="{noscroll:accoIsOpen}" aria-controls="acco1" @click="accoIsOpen = ! accoIsOpen">
       <dt>Lorem.</dt>
       <dd id="acco2" x-show="accoIsOpen">Lorem ipsum dolor sit amet.</dd>
     </dl>
-    <dl x-data="{accoIsOpen: true}":class="{noscroll:accoIsOpen}" aria-controls="acco2" @click="accoIsOpen = ! accoIsOpen">
+    <dl x-data="{accoIsOpen: false}":class="{noscroll:accoIsOpen}" aria-controls="acco2" @click="accoIsOpen = ! accoIsOpen">
       <dt>Voluptatum.</dt>
       <dd id="acco2" x-show="accoIsOpen">Laborum odit nobis fugiat quo.</dd>
     </dl>
-    <dl x-data="{accoIsOpen: true}":class="{noscroll:accoIsOpen}" aria-controls="acco3" @click="accoIsOpen = ! accoIsOpen">
+    <dl x-data="{accoIsOpen: false}":class="{noscroll:accoIsOpen}" aria-controls="acco3" @click="accoIsOpen = ! accoIsOpen">
       <dt>Iure.</dt>
       <dd id="acco3" x-show="accoIsOpen">Nulla amet eos maiores corrupti.</dd>
     </dl>
