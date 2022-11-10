@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test menu</title>
@@ -22,7 +22,7 @@
       position: relative;
       z-index: 10;
     }
-    .noscroll_body {
+    .noscroll body {
       overflow: hidden;
     }
   </style>
@@ -32,7 +32,8 @@
     <!-- header>h1{Test de menu} -->
     <header>
       <button aria-controls="mainNav" aria-expanded="true"
-      @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">menu</button>
+      @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+      menu</button>
       <h1>Test de menu</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
       class="menu">
@@ -51,5 +52,58 @@
       nemo aliquid pariatur quam voluptates animi laudantium, aperiam
       consectetur nobis enim.
     </p>
+    <!-- accordeon -->
+    <dl id="acco" x-show="accoIsOpen">
+        <dt>Lorem.</dt>
+        <dd>Lorem ipsum dolor sit amet.</dd>
+      </dl>
+      <dl id="acco" x-show="accoIsOpen">
+        <dt>Eum!</dt>
+        <dd>Pariatur quasi quam perferendis corrupti!</dd>
+      </dl>
+      <dl id="acco" x-show="accoIsOpen">
+        <dt>Enim!</dt>
+        <dd>Nam, quaerat iure? Molestias, inventore!</dd>
+      </dl>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
+        nemo aliquid pariatur quam voluptates animi laudantium, aperiam
+        consectetur nobis enim.
+      </p> 
+      <!-- test scroll-->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
+        nemo aliquid pariatur quam voluptates animi laudantium, aperiam
+        consectetur nobis enim nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn;.
+      </p>   
   </body>
 </html>
