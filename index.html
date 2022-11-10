@@ -54,15 +54,15 @@
     <!-- accordeon -->
     <dl  x-data="{accoIsOpen: false}":class="{noscroll:accoIsOpen}" aria-controls="acco1" @click="accoIsOpen = ! accoIsOpen">
       <dt>Lorem.</dt>
-      <dd id="acco2" x-show="accoIsOpen">Lorem ipsum dolor sit amet.</dd>
+      <dd id="acco2" x-show="accoIsOpen" x-transition.duration.400ms>Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl x-data="{accoIsOpen: false}":class="{noscroll:accoIsOpen}" aria-controls="acco2" @click="accoIsOpen = ! accoIsOpen">
       <dt>Voluptatum.</dt>
-      <dd id="acco2" x-show="accoIsOpen">Laborum odit nobis fugiat quo.</dd>
+      <dd id="acco2" x-show="accoIsOpen" x-transition.duration.400ms>Laborum odit nobis fugiat quo.</dd>
     </dl>
     <dl x-data="{accoIsOpen: false}":class="{noscroll:accoIsOpen}" aria-controls="acco3" @click="accoIsOpen = ! accoIsOpen">
       <dt>Iure.</dt>
-      <dd id="acco3" x-show="accoIsOpen">Nulla amet eos maiores corrupti.</dd>
+      <dd id="acco3" x-show="accoIsOpen" x-transition.duration.400ms>Nulla amet eos maiores corrupti.</dd>
     </dl>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
