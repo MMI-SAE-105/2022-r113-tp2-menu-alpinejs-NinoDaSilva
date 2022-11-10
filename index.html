@@ -32,7 +32,7 @@
     <!-- header>h1{Test de menu} -->
     <header>
       <button aria-controls="mainNav" aria-expanded="true"
-      @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+      @click="menuIsOpen = ! menuIsOpen":class="header_menuBtn">
       menu</button>
       <h1>Test de menu</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
@@ -53,18 +53,18 @@
       consectetur nobis enim.
     </p>
     <!-- accordeon -->
-    <dl id="acco" x-show="accoIsOpen">
-        <dt>Lorem.</dt>
-        <dd>Lorem ipsum dolor sit amet.</dd>
-      </dl>
-      <dl id="acco" x-show="accoIsOpen">
-        <dt>Eum!</dt>
-        <dd>Pariatur quasi quam perferendis corrupti!</dd>
-      </dl>
-      <dl id="acco" x-show="accoIsOpen">
-        <dt>Enim!</dt>
-        <dd>Nam, quaerat iure? Molestias, inventore!</dd>
-      </dl>
+    <dl x-data="{accIsOpen: false}" aria-controls="acco1" @click="accoIsOpen = ! accoIsOpen">
+      <dt>Lorem.</dt>
+      <dd id="acco1">Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl>
+      <dt>Voluptatum.</dt>
+      <dd id="acco2">Laborum odit nobis fugiat quo.</dd>
+    </dl>
+    <dl>
+      <dt>Iure.</dt>
+      <dd id="acco3">Nulla amet eos maiores corrupti.</dd>
+    </dl>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
         mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
